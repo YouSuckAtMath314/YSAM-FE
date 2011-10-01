@@ -1,0 +1,894 @@
+Tmathdeathmatch
+v7
+r0
+t339187683.504079
+cCheck dependencies
+cProcessInfoPlistFile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/Info.plist mathdeathmatch-Info.plist
+cCompileXIB /Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/mathdeathmatch.app/matchtrack.mp3 matchtrack.mp3
+cCompileXIB /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib
+cCompileXIB /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib
+cProcessPCH /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch.gch mathdeathmatch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/main.o /Users/dmercredi/Projects/mathdeathmatch/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchAppDelegate.o /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnub.o /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnubRequest.o /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/NSObject+JSON.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonParser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserAdapter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserState.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriterState.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonTokeniser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonWriter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/MathGameViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch normal i386
+cGenerateDSYMFile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app.dSYM /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch
+cTouch /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/CommonCrypto/CommonDigest.h
+c000000004A11E8210000000000002407
+t1242687521
+s9223
+
+N/Users/dmercredi/Projects/mathdeathmatch/05 k10.mp3
+c000000004E87502600000000005D6BC0
+t1317490726
+s6122432
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.h
+c000000004E875D57000000000000011A
+t1317494103
+s282
+i<UIKit/UIKit.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m
+c000000004E8757B10000000000000577
+t1317492657
+s1399
+i"StartScreenViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.xib
+c000000004E875F61000000000000191E
+t1317494625
+s6430
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub
+c000000004E874D4E00000000000000EE
+t1317489998
+s238
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.h
+c000000004E874E030000000000000B07
+t1317490179
+s2823
+i<Foundation/Foundation.h>
+i"JSON.h"
+i"CEPubnubRequest.h"
+i"CEPubnubDelegate.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m
+c000000004E874E000000000000002972
+t1317490176
+s10610
+i"CEPubnub.h"
+i<CommonCrypto/CommonDigest.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubDelegate.h
+c000000004E874D4E000000000000087E
+t1317489998
+s2174
+i<UIKit/UIKit.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.h
+c000000004E874D4E0000000000000951
+t1317489998
+s2385
+i<Foundation/Foundation.h>
+i"JSON.h"
+i"CEPubnubDelegate.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m
+c000000004E874D4E000000000000100D
+t1317489998
+s4109
+i"CEPubnubRequest.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON
+c000000004E874D4E00000000000002CA
+t1317489998
+s714
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/JSON.h
+c000000004E874D4E0000000000000B5B
+t1317489998
+s2907
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+i"SBJsonStreamWriter.h"
+i"SBJsonStreamParser.h"
+i"SBJsonStreamParserAdapter.h"
+i"NSObject+JSON.h"
+i<JSON/SBJsonParser.h>
+i<JSON/SBJsonWriter.h>
+i<JSON/SBJsonStreamParser.h>
+i<JSON/SBJsonStreamParserAdapter.h>
+i<JSON/SBJsonStreamWriter.h>
+i<JSON/NSObject+JSON.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.h
+c000000004E874D4E0000000000000899
+t1317489998
+s2201
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m
+c000000004E874D4E00000000000008C2
+t1317489998
+s2242
+i"NSObject+JSON.h"
+i"SBJsonWriter.h"
+i"SBJsonParser.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.h
+c000000004E874D4E0000000000000FCC
+t1317489998
+s4044
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m
+c000000004E874D4E0000000000000D75
+t1317489998
+s3445
+i"SBJsonParser.h"
+i"SBJsonStreamParser.h"
+i"SBJsonStreamParserAdapter.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.h
+c000000004E874D4E0000000000001177
+t1317489998
+s4471
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m
+c000000004E874D4E00000000000023C2
+t1317489998
+s9154
+i"SBJsonStreamParser.h"
+i"SBJsonTokeniser.h"
+i"SBJsonStreamParserState.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.h
+c000000004E874D4E0000000000000C4E
+t1317489998
+s3150
+i<Foundation/Foundation.h>
+i"SBJsonStreamParser.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m
+c000000004E874D4E000000000000128C
+t1317489998
+s4748
+i"SBJsonStreamParserAdapter.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.h
+c000000004E874D4E0000000000000C6F
+t1317489998
+s3183
+i<Foundation/Foundation.h>
+i"SBJsonTokeniser.h"
+i"SBJsonStreamParser.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m
+c000000004E874D4E0000000000002754
+t1317489998
+s10068
+i"SBJsonStreamParserState.h"
+i"SBJsonStreamParser.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.h
+c000000004E874D4E00000000000015C3
+t1317489998
+s5571
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m
+c000000004E874D4E000000000000283A
+t1317489998
+s10298
+i"SBJsonStreamWriter.h"
+i"SBJsonStreamWriterState.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.h
+c000000004E874D4E0000000000000B5D
+t1317489998
+s2909
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m
+c000000004E874D4E000000000000136F
+t1317489998
+s4975
+i"SBJsonStreamWriterState.h"
+i"SBJsonStreamWriter.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.h
+c000000004E874D4E0000000000000949
+t1317489998
+s2377
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m
+c000000004E874D4E0000000000002BC1
+t1317489998
+s11201
+i"SBJsonTokeniser.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.h
+c000000004E874D4E00000000000012F9
+t1317489998
+s4857
+i<Foundation/Foundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m
+c000000004E874D4E0000000000000C90
+t1317489998
+s3216
+i"SBJsonWriter.h"
+i"SBJsonStreamWriter.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.h
+c000000004E875C370000000000000140
+t1317493815
+s320
+i<UIKit/UIKit.h>
+i<AVFoundation/AVFoundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m
+c000000004E875CB3000000000000076A
+t1317493939
+s1898
+i"MathGameViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib
+c000000004E875BFD00000000000050A3
+t1317493757
+s20643
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.h
+c000000004E875FA50000000000000119
+t1317494693
+s281
+i<UIKit/UIKit.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m
+c000000004E875FB4000000000000057C
+t1317494708
+s1404
+i"StartScreenViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib
+c000000004E87602D0000000000001FC2
+t1317494829
+s8130
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.h
+c000000004E8758CA0000000000000210
+t1317492938
+s528
+i<UIKit/UIKit.h>
+i"CEPubnub.h"
+i"StartScreenViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m
+c000000004E875D610000000000001132
+t1317494113
+s4402
+i"mathdeathmatchAppDelegate.h"
+i"CEPubnub.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.h
+c000000004E8750E80000000000000149
+t1317490920
+s329
+i<UIKit/UIKit.h>
+i<AVFoundation/AVFoundation.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m
+c000000004E8752770000000000000822
+t1317491319
+s2082
+i"mathdeathmatchViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib
+c000000004E8758080000000000002496
+t1317492744
+s9366
+
+N/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.h
+c000000004E875D57000000000000011A
+t1317494103
+s282
+i<UIKit/UIKit.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m
+c000000004E8757B10000000000000577
+t1317492657
+s1399
+i"StartScreenViewController.h"
+
+N/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib
+c000000004E8757720000000000002063
+t1317492594
+s8291
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app
+t1317494833
+s408
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app.dSYM
+t1317494833
+s102
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/05 k10.mp3
+t2
+s0
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/CEPubnub
+t1317490078
+s238
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/Info.plist
+t1317493537
+s771
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/JSON
+t1317490078
+s714
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/MainWindow.nib
+t1317492955
+s991
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/MathGameViewController.nib
+t1317493943
+s795
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/PkgInfo
+t1317493537
+s8
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/StartScreenViewController.nib
+t1317494832
+s1372
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/matchtrack.mp3
+t1317491201
+s6122432
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch
+t1317494833
+s145172
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatchViewController.nib
+t1317488473
+s795
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnub.o
+t1317490446
+s45860
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnubRequest.o
+t1317490133
+s26016
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/MathGameViewController.o
+t1317493943
+s44440
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/NSObject+JSON.o
+t1317490133
+s8676
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonParser.o
+t1317490133
+s17684
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParser.o
+t1317490133
+s34444
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserAdapter.o
+t1317490133
+s26196
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserState.o
+t1317490133
+s40872
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriter.o
+t1317490133
+s44156
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriterState.o
+t1317490133
+s24464
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonTokeniser.o
+t1317490133
+s36712
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonWriter.o
+t1317490133
+s18232
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o
+t1317494832
+s39040
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/main.o
+t1317488474
+s6324
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatch.LinkFileList
+c000000004E87603000000000000008DC
+t1317494832
+s2268
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchAppDelegate.o
+t1317494832
+s59332
+
+N/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchViewController.o
+t1317491320
+s44056
+
+N/Users/dmercredi/Projects/mathdeathmatch/main.m
+c000000004E87474E0000000000000173
+t1317488462
+s371
+i<UIKit/UIKit.h>
+
+N/Users/dmercredi/Projects/mathdeathmatch/matchtrack.mp3
+c000000004E87502600000000005D6BC0
+t1317490726
+s6122432
+
+N/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatchViewController.xib
+c000000004E87474E0000000000001A61
+t1317488462
+s6753
+
+N/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatch_Prefix.pch
+c000000004E87474E00000000000000C5
+t1317488462
+s197
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch.gch
+t1317488474
+s15453392
+
+Nmathdeathmatch-Info.plist
+c000000004E875B210000000000000463
+t1317493537
+s1123
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies339187683#339187683#0(0"0(0#1#0"4523697472#0"0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnub.o /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339183246.759983
+e339183246.858186
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnub.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m339183246#339183246#0(0"0(0#0#68"/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m4575927952#2113"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnub.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnub.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnubRequest.o /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.577309
+e339182933.668595
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnubRequest.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m339182933#339182933#0(0"0(0#0#75"/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m4530118288#2127"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub/CEPubnubRequest.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/CEPubnubRequest.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/MathGameViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339186743.752625
+e339186743.877891
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/MathGameViewController.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m339186743#339186743#0(0"0(0#0#73"/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m4530536080#2132"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/MathGameViewController.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/NSObject+JSON.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.578519
+e339182933.654079
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/NSObject+JSON.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m339182933#339182933#0(0"0(0#0#69"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m4530118288#2119"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/NSObject+JSON.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/NSObject+JSON.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonParser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.654209
+e339182933.753492
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonParser.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m339182933#339182933#0(0"0(0#0#68"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m4530118288#2117"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonParser.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonParser.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.663328
+e339182933.792090
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParser.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m339182933#339182933#0(0"0(0#0#74"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m4530118288#2129"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParser.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParser.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserAdapter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.668898
+e339182933.801169
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserAdapter.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m339182933#339182933#0(0"0(0#0#81"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m4530118288#2143"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserAdapter.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserAdapter.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserState.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.739228
+e339182933.854585
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserState.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m339182933#339182933#0(0"0(0#0#79"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m4530118288#2139"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamParserState.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamParserState.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.753628
+e339182933.916361
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriter.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m339182933#339182933#0(0"0(0#0#74"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m4530118288#2129"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriter.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriter.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriterState.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.792224
+e339182933.889128
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriterState.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m339182933#339182933#0(0"0(0#0#79"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m4530118288#2139"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonStreamWriterState.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonStreamWriterState.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonTokeniser.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.801313
+e339182933.922791
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonTokeniser.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m: In function '-[SBJsonTokeniser decodeUnicodeEscape:index:]':
+o/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m:354: warning: comparison is always false due to limited range of data type
+lSLF07#2@79"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m339182933#339182933#0(281"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m: In function '-[SBJsonTokeniser decodeUnicodeEscape:index:]':/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m:354: warning: comparison is always false due to limited range of data type1(22@60"Comparison is always false due to limited range of data type339182933#134#147#0(6@71"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m339182798#354#0#354#0#0"0(0#0#71"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m4530118288#2123"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonTokeniser.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonTokeniser.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonWriter.o /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339182933.854724
+e339182933.926038
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonWriter.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m339182933#339182933#0(0"0(0#0#68"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m4530118288#2117"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON/SBJsonWriter.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/SBJsonWriter.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339186904.731248
+e339186904.782500
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m339186904#339186904#0(0"0(0#0#79"/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m4529999504#2141"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339187632.893983
+e339187632.994172
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m339187632#339187632#0(0"0(0#0#76"/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m4524232336#2138"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o /Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339185492.891355
+e339185492.945213
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o
+x/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m339185492#339185492#0(0"0(0#0#68"/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m4529999504#2130"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/StartScreenViewController.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/main.o /Users/dmercredi/Projects/mathdeathmatch/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339181274.408922
+e339181274.511900
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/main.o
+x/Users/dmercredi/Projects/mathdeathmatch/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/dmercredi/Projects/mathdeathmatch/main.m339181274#339181274#0(0"0(0#0#47"/Users/dmercredi/Projects/mathdeathmatch/main.m4546371216#2088"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/main.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/main.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchAppDelegate.o /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339187632.892175
+e339187632.966602
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchAppDelegate.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m339187632#339187632#0(0"0(0#0#76"/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m17264315648#2138"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchAppDelegate.o0#
+
+CCompileC build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchViewController.o /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s339184120.700950
+e339184120.781188
+r1
+xCompileC
+xbuild/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchViewController.o
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m339184120#339184120#0(0"0(0#0#79"/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m4546100880#2144"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -include /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch -c /Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchViewController.m -o /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatchViewController.o0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.xib
+s339186904.346316
+e339186904.728966
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.
+lSLF07#2@51"CompileXIB Classes/../StartScreenViewController.xib339186904#339186904#0(246"/* com.apple.ibtool.document.warnings *//Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.1(22@120"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.339186904#18446744073709551615#0#0(6@70"/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib339186899#18446744073709551615#0#18446744073709551615#0#0"0(0#0#81"/Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.xib4529999504#640"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/StartScreenViewController.nib /Users/dmercredi/Projects/mathdeathmatch/Classes/../StartScreenViewController.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib
+s339186743.246914
+e339186743.750799
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on MathGameViewController.
+lSLF07#2@45"CompileXIB Classes/MathGameViewController.xib339186743#339186743#0(248"/* com.apple.ibtool.document.warnings *//Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on MathGameViewController.1(22@117"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on MathGameViewController.339186743#18446744073709551615#0#0(6@75"/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib339186557#18446744073709551615#0#18446744073709551615#0#0"0(0#0#75"/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib4530536080#631"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/MathGameViewController.nib /Users/dmercredi/Projects/mathdeathmatch/Classes/MathGameViewController.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib
+s339187632.496873
+e339187632.891857
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.
+lSLF07#2@48"CompileXIB Classes/StartScreenViewController.xib339187632#339187632#0(254"/* com.apple.ibtool.document.warnings *//Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.1(22@120"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.339187632#18446744073709551615#0#0(6@78"/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib339187629#18446744073709551615#0#18446744073709551615#0#0"0(0#0#78"/Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib17264417536#637"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/StartScreenViewController.nib /Users/dmercredi/Projects/mathdeathmatch/Classes/StartScreenViewController.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib
+s339185754.918624
+e339185755.278387
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib339185754#339185755#0(0"0(0#0#55"/Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib4530536080#599"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/MainWindow.nib /Users/dmercredi/Projects/mathdeathmatch/MainWindow.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib
+s339185461.404738
+e339185461.832536
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.
+lSLF07#2@40"CompileXIB StartScreenViewController.xib339185461#339185461#0(246"/* com.apple.ibtool.document.warnings *//Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.1(22@120"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on StartScreenViewController.339185461#18446744073709551615#0#0(6@70"/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib339185394#18446744073709551615#0#18446744073709551615#0#0"0(0#0#70"/Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib4530536080#629"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/StartScreenViewController.nib /Users/dmercredi/Projects/mathdeathmatch/StartScreenViewController.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/dmercredi/Projects/mathdeathmatch/mathdeathmatchViewController.xib
+s339181273.238046
+e339181273.633896
+r1
+xCompileXIB
+x/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatchViewController.xib
+lSLF07#2@43"CompileXIB mathdeathmatchViewController.xib339181273#339181273#0(0"0(0#0#73"/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatchViewController.xib4546371216#635"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatchViewController.nib /Users/dmercredi/Projects/mathdeathmatch/mathdeathmatchViewController.xib --sdk /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource "build/Debug-iphonesimulator/mathdeathmatch.app/05 k10.mp3" "05 k10.mp3"
+r0
+
+CCpResource build/Debug-iphonesimulator/mathdeathmatch.app/CEPubnub Classes/CEPubnub
+s339182878.656737
+e339182878.667662
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/mathdeathmatch.app/CEPubnub
+xClasses/CEPubnub
+lSLF07#2@21"Copy Classes/CEPubnub339182878#339182878#0(0"0(0#0#57"/Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub4479114896#499"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/dmercredi/Projects/mathdeathmatch/Classes/CEPubnub /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app0#
+
+CCpResource build/Debug-iphonesimulator/mathdeathmatch.app/JSON Classes/JSON
+s339182878.657366
+e339182878.669982
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/mathdeathmatch.app/JSON
+xClasses/JSON
+lSLF07#2@17"Copy Classes/JSON339182878#339182878#0(0"0(0#0#53"/Users/dmercredi/Projects/mathdeathmatch/Classes/JSON4479114896#495"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/dmercredi/Projects/mathdeathmatch/Classes/JSON /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app0#
+
+CCpResource build/Debug-iphonesimulator/mathdeathmatch.app/matchtrack.mp3 matchtrack.mp3
+s339184001.830429
+e339184001.848170
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/mathdeathmatch.app/matchtrack.mp3
+xmatchtrack.mp3
+lSLF07#2@19"Copy matchtrack.mp3339184001#339184001#0(0"0(0#0#55"/Users/dmercredi/Projects/mathdeathmatch/matchtrack.mp34530536080#497"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/dmercredi/Projects/mathdeathmatch/matchtrack.mp3 /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app0#
+
+CGenerateDSYMFile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app.dSYM /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch
+s339187633.025268
+e339187633.051202
+r1
+xGenerateDSYMFile
+x/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app.dSYM
+x/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch
+lSLF07#2@130"GenerateDSYMFile build/Debug-iphonesimulator/mathdeathmatch.app.dSYM build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch339187633#339187633#0(0"0(0#0#102"/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch4524232336#422"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/usr/bin/dsymutil /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch -o /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app.dSYM0#
+
+CLd /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch normal i386
+s339187632.994256
+e339187633.025079
+r1
+xLd
+x/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch
+xnormal
+xi386
+lSLF07#2@107"Link /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch339187632#339187633#0(0"0(0#0#0"4524232336#985"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -filelist /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/Objects-normal/i386/mathdeathmatch.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -o /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/mathdeathmatch0#
+
+CProcessInfoPlistFile /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/Info.plist mathdeathmatch-Info.plist
+s339186337.612597
+e339186337.616174
+r1
+xProcessInfoPlistFile
+x/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/Info.plist
+xmathdeathmatch-Info.plist
+lSLF07#2@33"Process mathdeathmatch-Info.plist339186337#339186337#0(0"0(0#0#66"/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatch-Info.plist4546100992#514"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility mathdeathmatch-Info.plist -genpkginfo /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app/Info.plist0#
+
+CProcessPCH /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch.gch mathdeathmatch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s339181273.639182
+e339181274.408834
+r1
+xProcessPCH
+x/var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch.gch
+xmathdeathmatch_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile mathdeathmatch_Prefix.pch339181273#339181274#0(0"0(0#0#66"/Users/dmercredi/Projects/mathdeathmatch/mathdeathmatch_Prefix.pch4546371216#1971"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer-old/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-generated-files.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-own-target-headers.hmap -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-all-target-headers.hmap -iquote /Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/mathdeathmatch-project-headers.hmap -F/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator -I/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/include -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources/i386 -I/Users/dmercredi/Projects/mathdeathmatch/build/mathdeathmatch.build/Debug-iphonesimulator/mathdeathmatch.build/DerivedSources -c /Users/dmercredi/Projects/mathdeathmatch/mathdeathmatch_Prefix.pch -o /var/folders/v8/yj8rknmn7t997kr0yn2843tw0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/mathdeathmatch_Prefix-hkbuqgpfgmwjspfuzugilinrxjom/mathdeathmatch_Prefix.pch.gch0#
+
+CTouch /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app
+s339187633.051288
+e339187633.054320
+r1
+xTouch
+x/Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app
+lSLF07#2@93"Touch /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app339187633#339187633#0(0"0(0#0#0"4524232336#297"    cd /Users/dmercredi/Projects/mathdeathmatch    setenv PATH "/Developer-old/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer-old/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/dmercredi/Projects/mathdeathmatch/build/Debug-iphonesimulator/mathdeathmatch.app0#
+
