@@ -8,8 +8,16 @@
 
 #import "MathGameViewController.h"
 
+@interface MathGameViewController ()
+
+- (void) updateUIToEquation;
+- (MathEquation *) generateRandomEquation;
+
+@end
 
 @implementation MathGameViewController
+
+@synthesize equationStartLabel, operatorLabel, equationEndLabel, currentEquation;
 
 - (void) finishInitialization {
 	NSURL *url = [[NSBundle mainBundle] URLForResource: @"matchtrack" withExtension: @"mp3"];
@@ -35,6 +43,17 @@
     return self;
 }
 
+- (void)dealloc {
+    self.equationEndLabel = nil;
+    self.equationStartLabel = nil;
+    self.operatorLabel = nil;
+    self.currentEquation = nil;
+    
+	[backgroundTrack release];
+	
+    [super dealloc];
+}
+
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -46,6 +65,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.
     return YES;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    self.currentEquation = [self generateRandomEquation];
+    [self updateUIToEquation];
+
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -72,12 +97,83 @@
     // e.g. self.myOutlet = nil;
 }
 
-
-- (void)dealloc {
-	[backgroundTrack release];
-	
-    [super dealloc];
+- (IBAction) addPressed {
+    NSLog(@"Add Pressed");
 }
 
+- (IBAction) subtractPressed {
+    NSLog(@"Subtract Pressed");
+}
+
+- (IBAction) dividePressed {
+    NSLog(@"Divide Pressed");
+}
+
+- (IBAction) multiplyPressed {
+    NSLog(@"Multiply Pressed");
+}
+
+- (IBAction) cancelGame {
+    NSLog(@"Cancel");
+    
+    [self.parentViewController dismissModalViewControllerAnimated: YES];
+}
+
+- (void) updateUIToEquation {
+    if (!currentEquation) {
+        equationStartLabel.hidden = YES;
+        equationEndLabel.hidden = YES;
+        operatorLabel.hidden = YES;
+    }
+    else {
+        equationStartLabel.text = [NSString stringWithFormat: @"%d", currentEquation.firstTerm];
+        equationEndLabel.text = [NSString stringWithFormat: @"%d = %d", currentEquation.secondTerm, currentEquation.equationResult];
+        
+        switch (currentEquation.equationType) {
+            case MathEquationTypeAddition:
+                operatorLabel.text = @"+";
+                break;
+            case MathEquationTypeSubtraction:
+                operatorLabel.text = @"−";
+                break;
+            case MathEquationTypeDivision:
+                operatorLabel.text = @"÷";
+                break;
+            case MathEquationTypeMultiplication:
+            default:
+                operatorLabel.text = @"×";
+                break;
+        }
+            
+        equationStartLabel.hidden = NO;
+        equationEndLabel.hidden = NO;
+    }
+}
+
+- (MathEquation *) generateRandomEquation {
+    MathEquationType type = (MathEquationType) arc4random() % 4;
+
+    int multiplyNumber1 = (arc4random() % 12) + 1;
+    int multiplyNumber2 = (arc4random() % 12) + 1;
+    
+    int additionNumber1 = (arc4random() % 50) + 1;
+    int additionNumber2 = (arc4random() % 50) + 1;
+    
+    switch (type) {
+        case MathEquationTypeAddition:
+            return [MathEquation additionWithNumber: additionNumber1 andNumber: additionNumber2];
+            break;
+        case MathEquationTypeSubtraction:
+            return [MathEquation subtractionWithNumber: (additionNumber1 + additionNumber2) andNumber: additionNumber1];
+            break;
+        case MathEquationTypeDivision:
+            return [MathEquation divisionWithDividend: (multiplyNumber1 * multiplyNumber2) divisor: multiplyNumber1];
+            break;
+        case MathEquationTypeMultiplication:
+        default:
+            return [MathEquation multiplicationWithMultiplier: multiplyNumber1 andMultiplier: multiplyNumber2];
+            break;
+    }
+}
 
 @end
