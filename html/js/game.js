@@ -15,7 +15,12 @@ var playerstate = [
     {"health":0.8},
 ]
 
+var statechange_time = Date.now();
+
+var gamestate = 'loading';
+var gameplay_state = 'selecting';
 var player_image = null;
+var enemy_image = null;
 var orb_hopper = [];
 var orb_columns= [];
 var orb_colors = [ "R", "G", "B", "Y"];
@@ -48,6 +53,16 @@ var loadart = function ( artindex )
         image.src = artindex[key].path;
 
         artindex[key]["image"] = image;   
+    }
+};
+
+var load_audio = function ( audioindex )
+{
+    for( key in audioindex )
+    {  
+        var sound =  new Audio( audioindex[key].path );
+
+        audioindex[key]["audio"] = sound;   
     }
 };
 
@@ -85,15 +100,13 @@ var render_health = function()
 
     render_health_bar(canvas.width - artindex.bg_health_empty.image.width ,0, playerstate[1].health, artindex.bg_health_empty, artindex.bg_health_full_blue);
 
-    render_avatar(player_image, 100, 80, playerstate[0].health );
-    render_avatar(player_image, (canvas.width - 100 ) - player_image.image.width, 80, playerstate[1].health );
+    render_avatar(player_image, ((300 - player_image.image.width) / 2), 80, playerstate[0].health );
+    render_avatar(enemy_image, (canvas.width - 150) - (enemy_image.image.width / 2), 80, playerstate[1].health );
 };
 
 var render_gameplay = function()
 {
     
-    //this should really be in update_gameplay()
-    place_orbs();
 
     ctx.drawImage( artindex.background.image, 0,0 );
 
@@ -120,6 +133,25 @@ var do_damage = function( player_index )
 {
     playerstate[player_index].health -= 0.1;
 
+    if(player_index == 1)
+    {
+        audioindex.excellent.audio.play();
+    }
+    else
+    {
+        audioindex.wickedsick.audio.play();
+    }
+}
+
+var set_gameplaystate = function( state )
+{
+    statechange_time = Date.now();
+    gameplay_state = state;
+};
+
+var time_in_gameplaysate = function()
+{
+    return Date.now() - statechange_time;
 }
 
 var orb_click_closure = function( orb )
@@ -127,7 +159,7 @@ var orb_click_closure = function( orb )
 
     return function()
     {
-        if( picked_orbs.indexOf( orb ) < 0 )
+        if( gameplay_state == 'selecting' && picked_orbs.indexOf( orb ) < 0 )
         { 
             picked_orbs.push( orb );
 
@@ -146,25 +178,25 @@ var orb_click_closure = function( orb )
 
             if(picked_orbs.length >= 2)
             {
-                var picked_answer = picked_orbs[0].text + picked_orbs[1].text;
-                if(picked_answer == question.answer)
-                {
-                    do_damage(1);
-                }
-                else
-                {
-                    do_damage(0);
-                }
-                generate_question();
-
-                buttons.splice( buttons.indexOf( picked_orbs[0]) , 1);
-                buttons.splice( buttons.indexOf( picked_orbs[1]) , 1);
-
-                picked_orbs = [];
+                set_gameplaystate( "evaluating" );
+                evaluate_answer();
             }
         }
     }
 
+};
+
+var evaluate_answer = function()
+{
+    var picked_answer = picked_orbs[0].text + picked_orbs[1].text;
+    if(picked_answer == question.answer)
+    {
+        do_damage(1);
+    }
+    else
+    {
+        do_damage(0);
+    }
 };
 
 var gen_orb = function()
@@ -249,6 +281,24 @@ var generate_question = function()
     return question;
 }
 
+var update_gameplay = function(delta)
+{
+    place_orbs();
+    if(gameplay_state == 'evaluating' && time_in_gameplaysate() > 1500.0)
+    {
+
+        generate_question();
+
+        for(var i in picked_orbs)
+        {
+            buttons.splice( buttons.indexOf( picked_orbs[i]) , 1);
+        }
+        picked_orbs = [];
+
+        set_gameplaystate('selecting');
+    }
+};
+
 var reset_gameplay = function()
 {
     buttons = [];
@@ -262,7 +312,7 @@ var reset_gameplay = function()
     reset_orbs();
 
     generate_question();
-
+    set_gameplaystate('selecting');
     gamestate = "playing"; 
 };
 
@@ -279,6 +329,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "newton"; 
                         player_image = artindex.newton;
+                        enemy_image = artindex.einstein;
                         reset_lobby();
                     } 
                 };
@@ -294,6 +345,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "archimedes"; 
                         player_image = artindex.archimedes;
+                        enemy_image = artindex.einstein;
                         reset_lobby();
                     } };
 
@@ -308,6 +360,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "einstein"; 
                         player_image = artindex.einstein;
+                        enemy_image = artindex.archimedes;
                         reset_lobby();
                     } };
 
@@ -481,7 +534,6 @@ var canvas_click = function(e)
 };
 
 var then = Date.now();
-var gamestate = 'loading';
 
 // The main game loop
 var main = function () {
@@ -498,12 +550,13 @@ var main = function () {
     }
     else if(gamestate == 'lobby')
     {
-      update_lobby(delta);
+        update_lobby(delta);
 	    render_lobby();
     }
     else if(gamestate == 'playing')
     {
-	    render_gameplay();
+        update_gameplay(delta);
+        render_gameplay();
     }
     else
     {
@@ -516,6 +569,7 @@ var main = function () {
 	then = now;
 };
 loadart( artindex );
+load_audio( audioindex );
 setInterval(main, 30);
 canvas.onclick = canvas_click;
 
