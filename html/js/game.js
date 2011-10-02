@@ -5,7 +5,7 @@ canvas.width = 1024;
 canvas.height = 768;
 document.body.appendChild(canvas);
 
-var theme_song = new Audio("../matchtrack.mp3");
+var theme_song = new Audio("audio/matchtrack.mp3");
 var buttons = [];
 var guid = Math.floor(Math.random()*10000); // HACK for now
 var channel = null;
@@ -82,7 +82,7 @@ var artloaded = function( artindex )
 
 var render_health_bar = function(x, y, health, empty_bar, full_bar)
 {
-    var split = full_bar.image.width * health;
+    var split = Math.floor(full_bar.image.width * health);
     ctx.drawImage( full_bar.image, 0, 0, split, full_bar.image.height, x,y, split, full_bar.image.height );
     ctx.drawImage( empty_bar.image, split, 0, empty_bar.image.width - split, empty_bar.image.height, x+split, y, empty_bar.image.width - split, empty_bar.image.height );
 };
@@ -436,7 +436,6 @@ var update_lobby = function(delta)
           $.ajax({ url: "http://localhost:3000/match/status/" + guid + ".js",
                    dataType: "jsonp",
                    success: function(data){ 
-                     console.log(data);
                      if(data.matched) {
                        match_found = true;
                        channel = data.channel;
@@ -505,7 +504,7 @@ var render_buttons = function()
             ctx.fillStyle = "rgb(256, 256, 256)";
             ctx.textBaseline = "top";
             ctx.textAlign = "center";
-            ctx.fillText( button.text, button.x + (button.width / 2.0), button.y + button.height * 0.125, button.width, button.height * 0.75 );
+            ctx.fillText( button.text, button.x + (button.width / 2.0), button.y + (button.height * 0.125), button.width );
         }
     }
 };
@@ -585,7 +584,7 @@ var main = function () {
 };
 loadart( artindex );
 load_audio( audioindex );
-setInterval(main, 30);
+setInterval(main, 300);
 canvas.onclick = canvas_click;
 
 reset_lobby = reset_gameplay;
