@@ -14,6 +14,10 @@ var playerstate = [
     {"health":0.8},
 ]
 
+var statechange_time = Date.now();
+
+var gamestate = 'loading';
+var gameplay_state = 'selecting';
 var player_image = null;
 var orb_hopper = [];
 var orb_columns= [];
@@ -47,6 +51,16 @@ var loadart = function ( artindex )
         image.src = artindex[key].path;
 
         artindex[key]["image"] = image;   
+    }
+};
+
+var load_audio = function ( audioindex )
+{
+    for( key in audioindex )
+    {  
+        var sound =  new Audio( audioindex[key].path );
+
+        audioindex[key]["audio"] = sound;   
     }
 };
 
@@ -91,8 +105,6 @@ var render_health = function()
 var render_gameplay = function()
 {
     
-    //this should really be in update_gameplay()
-    place_orbs();
 
     ctx.drawImage( artindex.background.image, 0,0 );
 
@@ -119,6 +131,25 @@ var do_damage = function( player_index )
 {
     playerstate[player_index].health -= 0.1;
 
+    if(player_index == 1)
+    {
+        audioindex.excellent.audio.play();
+    }
+    else
+    {
+        audioindex.wickedsick.audio.play();
+    }
+}
+
+var set_gameplaystate = function( state )
+{
+    statechange_time = Date.now();
+    gameplay_state = state;
+};
+
+var time_in_gameplaysate = function()
+{
+    return Date.now() - statechange_time;
 }
 
 var orb_click_closure = function( orb )
@@ -145,25 +176,25 @@ var orb_click_closure = function( orb )
 
             if(picked_orbs.length >= 2)
             {
-                var picked_answer = picked_orbs[0].text + picked_orbs[1].text;
-                if(picked_answer == question.answer)
-                {
-                    do_damage(1);
-                }
-                else
-                {
-                    do_damage(0);
-                }
-                generate_question();
-
-                buttons.splice( buttons.indexOf( picked_orbs[0]) , 1);
-                buttons.splice( buttons.indexOf( picked_orbs[1]) , 1);
-
-                picked_orbs = [];
+                set_gameplaystate( "evaluating" );
+                evaluate_answer();
             }
         }
     }
 
+};
+
+var evaluate_answer = function()
+{
+    var picked_answer = picked_orbs[0].text + picked_orbs[1].text;
+    if(picked_answer == question.answer)
+    {
+        do_damage(1);
+    }
+    else
+    {
+        do_damage(0);
+    }
 };
 
 var gen_orb = function()
@@ -247,6 +278,23 @@ var generate_question = function()
     
     return question;
 }
+
+var update_gameplay = function(delta)
+{
+    place_orbs();
+    if(gameplay_state == 'evaluating' && time_in_gameplaysate() > 1500.0)
+    {
+
+        generate_question();
+
+        buttons.splice( buttons.indexOf( picked_orbs[0]) , 1);
+        buttons.splice( buttons.indexOf( picked_orbs[1]) , 1);
+
+        picked_orbs = [];
+
+        set_gameplaystate('selecting');
+    }
+};
 
 var reset_gameplay = function()
 {
@@ -462,7 +510,6 @@ var canvas_click = function(e)
 };
 
 var then = Date.now();
-var gamestate = 'loading';
 
 // The main game loop
 var main = function () {
@@ -479,12 +526,13 @@ var main = function () {
     }
     else if(gamestate == 'lobby')
     {
-      update_lobby(delta);
+        update_lobby(delta);
 	    render_lobby();
     }
     else if(gamestate == 'playing')
     {
-	    render_gameplay();
+        update_gameplay(delta);
+        render_gameplay();
     }
     else
     {
@@ -497,8 +545,9 @@ var main = function () {
 	then = now;
 };
 loadart( artindex );
+load_audio( audioindex );
 setInterval(main, 30);
 canvas.onclick = canvas_click;
 
 reset_lobby = reset_gameplay;
-// theme_song.play();
+theme_song.play();
