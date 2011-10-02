@@ -7,6 +7,7 @@ document.body.appendChild(canvas);
 
 var theme_song = new Audio("../matchtrack.mp3");
 var buttons = [];
+var guid = Math.floor(Math.random()*10000); // HACK for now
 
 var onLoadClosure = function( image )
 {
@@ -71,7 +72,7 @@ var reset_charselect = function()
                 "y": 150, 
                 "width":image.image.width,
                 "height":image.image.height,
-                "click": function(){ character_select = "newton"; reset_gameplay();} };
+                "click": function(){ character_select = "newton"; reset_lobby();} };
 
     buttons.splice( 0, 0, button);
 
@@ -80,7 +81,7 @@ var reset_charselect = function()
                 "y": 150, 
                 "width":image.image.width,
                 "height":image.image.height,
-                "click": function(){ character_select = "archimedes"; reset_gameplay();} };
+                "click": function(){ character_select = "archimedes"; reset_lobby();} };
 
     buttons.splice( 0, 0, button);
 
@@ -89,7 +90,7 @@ var reset_charselect = function()
                 "y": 415, 
                 "width":image.image.width,
                 "height":image.image.height,
-                "click": function(){ character_select = "einstein"; reset_gameplay();} };
+                "click": function(){ character_select = "einstein"; reset_lobby();} };
 
     buttons.splice( 0, 0, button);
 
@@ -98,7 +99,7 @@ var reset_charselect = function()
                 "y": 415, 
                 "width":image.image.width,
                 "height":image.image.height,
-                "click": function(){ character_select = "curie"; reset_gameplay();}  };
+                "click": function(){ character_select = "curie"; reset_lobby();}  };
 
     buttons.splice( 0, 0, button);
     gamestate = 'charselect';
@@ -125,6 +126,66 @@ var reset_intro = function()
     buttons.splice( 0, 0, button);
 
     gamestate = 'intro';
+};
+
+var join_closure = function( )
+{
+    return function( data )
+    {
+        joiner.waiting = true; 
+    }
+};
+
+var lobby_searching = false;
+var match_found = false;
+var check_counter = 0;
+
+var update_lobby = function(delta)
+{
+  if(!match_found) {
+    if(lobby_searching) {
+      if(match_found) {
+        reset_lobby();
+      } else {
+        if(check_counter*delta > 1000) {
+          $.ajax({ url: "http://localhost:3000/match/status/" + guid + ".js",
+                   dataType: "jsonp",
+                   success: function(data){ 
+                     if(data.match) {
+                       match_found = true;
+                     }
+                   }
+          });
+          check_counter = 0;
+        }
+        check_counter = check_counter + 1;
+      }
+    } else {
+      $.ajax({ url: "http://localhost:3000/match/join/" + guid + ".js",
+               dataType: "jsonp",
+               success: function(){ 
+                 match_found = true;
+                 lobby_searching = false;
+               }
+      });
+    }
+  } else {
+    reset_gameplay();
+  }
+};
+
+var render_lobby = function()
+{
+    ctx.drawImage( artindex.background.image, 0,0  );
+
+    ctx.font = "bold 100px/120px Arial Rounded MT Bold";
+    ctx.fillStyle = "white";
+    ctx.fillText( "Loading...", 300, 300 );
+};
+
+var reset_lobby = function()
+{
+    gamestate = 'lobby';
 };
 
 var render_buttons = function()
@@ -190,6 +251,11 @@ var main = function () {
     {
 	    render_charselect();
     }
+    else if(gamestate == 'lobby')
+    {
+      update_lobby(delta);
+	    render_lobby();
+    }
     else if(gamestate == 'playing')
     {
 	    render();
@@ -205,7 +271,7 @@ var main = function () {
 	then = now;
 };
 loadart( artindex );
-setInterval(main, 1);
+setInterval(main, 30);
 canvas.onclick = canvas_click;
 
 // theme_song.play();
