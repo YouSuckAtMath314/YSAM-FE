@@ -5156,7 +5156,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339272797.09906101</real>
+		<real>339273464.91820598</real>
 		<string>{5834, 2719}</string>
 		<string>{6498, 0}</string>
 		<dict>
@@ -5252,9 +5252,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339272717.71991599</real>
-		<string>{733, 2327}</string>
-		<string>{879, 0}</string>
+		<real>339274255.01640999</real>
+		<string>{3, 2754}</string>
+		<string>{737, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6617,7 +6617,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339272731.67586702</real>
+		<real>339273503.02820098</real>
 		<string>{0, 424}</string>
 		<string>{296, 0}</string>
 		<dict>
@@ -7544,7 +7544,7 @@
 				<integer>595</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>339272753.34475201</real>
+			<real>339273642.94281101</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -7555,7 +7555,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 11:25 AM</string>
+		<string>Today at 11:40 AM</string>
 		<integer>234</integer>
 		<string>mathdeathmatch</string>
 		<dict>
@@ -7710,7 +7710,7 @@
 				<integer>609</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGame.m</string>
+		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7746,7 +7746,7 @@
 				<integer>613</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m</string>
+		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGame.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7959,7 +7959,7 @@
 			</array>
 		</dict>
 		<string>IDEWorkspaceTabController_240AD7D4-6C84-483D-B361-65E47595FE9D</string>
-		<string>{{91, 125}, {1791, 1017}}</string>
+		<string>{{82, 101}, {1791, 1017}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -8051,7 +8051,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>MathGame.m</string>
+		<string>mathdeathmatchAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -8188,7 +8188,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>642</integer>
+					<integer>44</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -8932,7 +8932,7 @@
 			<key>DocumentLocation</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>702</integer>
+				<integer>701</integer>
 			</dict>
 			<key>DomainIdentifier</key>
 			<dict>
@@ -8965,11 +8965,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>699</integer>
+					<integer>698</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>700</integer>
+					<integer>699</integer>
 				</dict>
 			</array>
 		</dict>
@@ -8982,10 +8982,9 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>698</integer>
+				<integer>648</integer>
 			</dict>
 		</dict>
-		<string>MathGame.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9007,7 +9006,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>701</integer>
+				<integer>700</integer>
 			</dict>
 		</dict>
 		<string>mathdeathmatch</string>
@@ -9020,13 +9019,22 @@
 			<key>documentURL</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>272</integer>
+				<integer>702</integer>
 			</dict>
 			<key>timestamp</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>0</integer>
 			</dict>
+		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>94</integer>
+			</dict>
+			<key>NS.string</key>
+			<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m</string>
 		</dict>
 		<dict>
 			<key>$class</key>
@@ -9218,7 +9226,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>698</integer>
+					<integer>648</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -9240,7 +9248,7 @@
 			<key>DocumentLocation</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>702</integer>
+				<integer>701</integer>
 			</dict>
 			<key>DomainIdentifier</key>
 			<dict>
@@ -9289,7 +9297,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>698</integer>
+				<integer>648</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -9362,10 +9370,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339272797.10207498</real>
-		<string>{5834, 2719}</string>
-		<string>{6498, 0}</string>
-		<string>-postAnswerWithTime:succeeded:timedOut:</string>
+		<real>339274255.01932299</real>
+		<string>{3, 2754}</string>
+		<string>{737, 0}</string>
+		<string>-application:didFinishLaunchingWithOptions:</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9383,7 +9391,7 @@
 				<integer>723</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/MathGame.m</string>
+		<string>file://localhost/Users/dmercredi/Projects/mathdeathmatch/Classes/mathdeathmatchAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9570,7 +9578,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>639</real>
+		<real>980</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9600,7 +9608,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>631</real>
+		<real>290</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9669,7 +9677,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>639</real>
+		<real>980</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9699,7 +9707,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>631</real>
+		<real>290</real>
 		<dict>
 			<key>$class</key>
 			<dict>
