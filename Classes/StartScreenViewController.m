@@ -34,7 +34,7 @@
 	NSLog(@"Starting game");
     
     MathGameViewController *gameController = [[[MathGameViewController alloc] init] autorelease];
-    gameController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+//    gameController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController: gameController animated: YES];
 }
 

@@ -10,6 +10,8 @@
 
 @interface MathGameViewController ()
 
+- (void) startAnotherRound;
+
 - (void) updateUIToEquation;
 - (MathEquation *) generateRandomEquation;
 
@@ -97,20 +99,73 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void) startAnotherRound {
+
+}
+
 - (IBAction) addPressed {
     NSLog(@"Add Pressed");
+    
+    if (currentEquation.equationType == MathEquationTypeAddition) {
+        // TODO: success!
+        
+        operatorLabel.textColor = [UIColor whiteColor];
+    }
+    else {
+        // TODO: failure!
+
+        operatorLabel.textColor = [UIColor redColor];
+    }
+
+    operatorLabel.hidden = NO;
 }
 
 - (IBAction) subtractPressed {
     NSLog(@"Subtract Pressed");
+
+    if (currentEquation.equationType == MathEquationTypeSubtraction) {
+        // TODO: success!
+        operatorLabel.textColor = [UIColor whiteColor];
+    }
+    else {
+        // TODO: failure!
+        
+        operatorLabel.textColor = [UIColor redColor];
+    }
+
+    operatorLabel.hidden = NO;
 }
 
 - (IBAction) dividePressed {
     NSLog(@"Divide Pressed");
+
+    if (currentEquation.equationType == MathEquationTypeDivision) {
+        // TODO: success!
+        operatorLabel.textColor = [UIColor whiteColor];
+    }
+    else {
+        // TODO: failure!
+        
+        operatorLabel.textColor = [UIColor redColor];
+    }
+
+    operatorLabel.hidden = NO;
 }
 
 - (IBAction) multiplyPressed {
     NSLog(@"Multiply Pressed");
+
+    if (currentEquation.equationType == MathEquationTypeMultiplication) {
+        // TODO: success!
+        operatorLabel.textColor = [UIColor whiteColor];
+    }
+    else {
+        // TODO: failure!
+        
+        operatorLabel.textColor = [UIColor redColor];
+    }
+    
+    operatorLabel.hidden = NO;
 }
 
 - (IBAction) cancelGame {
