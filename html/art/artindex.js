@@ -16,4 +16,8 @@ artindex = {
     "bg_health_empty" : { "path": "../bg_health_empty.png", "frame_height": 140, "named_frames": {} },
     "bg_health_full_red" : { "path": "../bg_health_full_red.png", "frame_height": 140, "named_frames": {} },
     "bg_health_full_blue" : { "path": "../bg_health_full_blue.png", "frame_height": 140, "named_frames": {} },
+    "effects_orb_green" : { "path": "../effects_orb_green.png", "frame_height": 140, "named_frames": {} },
+    "effects_orb_red" : { "path": "../effects_orb_red.png", "frame_height": 140, "named_frames": {} },
+    "effects_orb_blue" : { "path": "../effects_orb_blue.png", "frame_height": 140, "named_frames": {} },
+    "effects_orb_yellow" : { "path": "../effects_orb_yellow.png", "frame_height": 140, "named_frames": {} },
 }
