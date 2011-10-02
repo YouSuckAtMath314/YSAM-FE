@@ -16,6 +16,19 @@ var playerstate = [
 ]
 
 var player_image = null;
+var orb_hopper = [];
+var orb_columns= [];
+var orb_colors = [ "R", "G", "B", "Y"];
+var orb_colors_map = {
+     "R": "effects_orb_red",
+     "G": "effects_orb_blue",
+     "B": "effects_orb_green",
+     "Y": "effects_orb_yellow",
+};
+
+picked_orbs = [];
+
+var question = {"text": "", "answer":"" };
 
 var onLoadClosure = function( image )
 {
@@ -78,12 +91,22 @@ var render_health = function()
 
 var render_gameplay = function()
 {
+    
+    //this should really be in update_gameplay()
+    place_orbs();
+
     ctx.drawImage( artindex.background.image, 0,0 );
 
     render_buttons();
 
     render_health();
-   
+  
+    //render question 
+    ctx.font = "bold 70px/80px Arial Rounded MT Bold";
+    ctx.fillStyle = "rgb(256, 256, 256)";
+    ctx.textBaseline = "top";
+    ctx.textAlign = "center";
+    ctx.fillText( question.text, 512, 500 );
 };
 
 var render_charselect = function()
@@ -93,6 +116,139 @@ var render_charselect = function()
     render_buttons();
 };
 
+var do_damage = function( player_index )
+{
+    playerstate[player_index].health -= 0.1;
+
+}
+
+var orb_click_closure = function( orb )
+{
+
+    return function()
+    {
+        if( picked_orbs.indexOf( orb ) < 0 )
+        { 
+            picked_orbs.push( orb );
+
+            for(var i = 0; i < 5; i++)
+            {
+                var index = orb_columns[i].indexOf(orb);
+                if( index >= 0 )
+                 {
+                    orb_columns[i].splice(index,1);
+                    orb_hopper.push(orb.text);
+
+                    var replacement_orb = gen_orb();
+                    orb_columns[i].push(  replacement_orb );
+                }
+            }
+
+            if(picked_orbs.length >= 2)
+            {
+                var picked_answer = picked_orbs[0].text + picked_orbs[1].text;
+                if(picked_answer == question.answer)
+                {
+                    do_damage(1);
+                }
+                else
+                {
+                    do_damage(0);
+                }
+                generate_question();
+
+                buttons.splice( buttons.indexOf( picked_orbs[0]) , 1);
+                buttons.splice( buttons.indexOf( picked_orbs[1]) , 1);
+
+                picked_orbs = [];
+            }
+        }
+    }
+
+};
+
+var gen_orb = function()
+{
+    var color = orb_colors[Math.floor(Math.random() * orb_colors.length)];
+
+    
+    var pick_index = Math.floor(Math.random() * orb_hopper.length);
+    var hopper_pick = orb_hopper[ pick_index ];
+    orb_hopper.splice(pick_index, 1);
+
+    var image = artindex[orb_colors_map[color]];
+    var orb = { "image": image,
+                "text": hopper_pick.toString(),
+                "width": image.image.width,
+                "height": image.image.height
+                };
+
+    orb["click"] = orb_click_closure( orb ); 
+
+    buttons.splice(0,0, orb);
+
+    return orb;
+
+};
+
+var place_orbs = function()
+{
+
+    for(var i = 0; i < 5; i++)
+    {
+        for(var j = 0; j < orb_columns[i].length; j++)
+        {
+            orb_columns[i][j].x = 312 + i * 80; 
+            orb_columns[i][j].y = 370 - (j * 80); 
+        }
+    }
+
+    for(var i in picked_orbs)
+    {
+        picked_orbs[i].y = 610;
+        picked_orbs[i].x = 422 + (i * 80);
+    }
+
+};
+
+var reset_orbs = function()
+{
+    //Repopulating hopper
+    orb_hopper = [];
+    for(var i = 0; i < 10; i++)
+    {
+        for(var j = 0; j < 3; j++)
+        {
+            orb_hopper.splice(0,0,i.toString()); 
+        }
+    }
+
+    orb_columns = [ [],[],[],[],[] ];
+
+     
+    for(var i = 0; i < 5; i++)
+    {
+        for(var j = 0; j < 5; j++)
+        {
+            var orb = gen_orb(); 
+            
+            orb_columns[i].splice(0,0, orb);
+        }
+    }
+    place_orbs();
+};
+
+var generate_question = function()
+{
+    var a1 = Math.floor( (Math.random() * 44) + 5 ); 
+    var a2 = Math.floor( (Math.random() * 44) + 5 ); 
+
+    question.text = a1.toString() + " + " + a2.toString() + " = ?";
+    question.answer = (a1 + a2).toString();
+    
+    return question;
+}
+
 var reset_gameplay = function()
 {
     buttons = [];
@@ -101,51 +257,12 @@ var reset_gameplay = function()
     playerstate = [
         {"health":1.0},
         {"health":1.0}
-    ]
+    ];
+    
+    reset_orbs();
 
-    button = {  "x": 322,
-                "y": 350, 
-                "width":180,
-                "height":180,
-                "text": "1",
-                "click": function()
-                            { 
-                                playerstate[0].health = Math.max(0.0, playerstate[0].health - 0.1);
-                            } 
-                    };
- 
-    buttons.splice( 0, 0, button);
+    generate_question();
 
-    button = {  "x": 522,
-                "y": 350, 
-                "width":180,
-                "height":180,
-                "text": "2",
-                "click": function()
-                            { 
-                                playerstate[1].health = Math.max(0.0, playerstate[1].health - 0.1);
-                            } 
-                    };
- 
-    buttons.splice( 0, 0, button);
-
-    button = {  "x": 522,
-                "y": 550, 
-                "width":180,
-                "height":180,
-                "text": "3",
-                "click": function(){ } };
- 
-    buttons.splice( 0, 0, button);
-
-    button = {  "x": 322,
-                "y": 550, 
-                "width":180,
-                "height":180,
-                "text": "4",
-                "click": function(){ } };
- 
-    buttons.splice( 0, 0, button);
     gamestate = "playing"; 
 };
 
@@ -310,11 +427,11 @@ var render_buttons = function()
         }
         if(button.text)
         {
-            ctx.font = "bold 100px/120px Arial Rounded MT Bold";
+            ctx.font = "bold 50px/60px Arial Rounded MT Bold";
             ctx.fillStyle = "rgb(256, 256, 256)";
             ctx.textBaseline = "top";
             ctx.textAlign = "center";
-            ctx.fillText( button.text, button.x + (button.width / 2.0), button.y + button.height * 0.25, button.width, button.height * 0.75 );
+            ctx.fillText( button.text, button.x + (button.width / 2.0), button.y + button.height * 0.125, button.width, button.height * 0.75 );
         }
     }
 };
@@ -396,4 +513,5 @@ loadart( artindex );
 setInterval(main, 30);
 canvas.onclick = canvas_click;
 
+reset_lobby = reset_gameplay;
 // theme_song.play();

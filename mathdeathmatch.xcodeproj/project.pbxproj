@@ -17,6 +17,17 @@
 		0921E67A1437B2430084ADAE /* button_multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6721437B2430084ADAE /* button_multiply.png */; };
 		0921E67B1437B2430084ADAE /* button_subtract_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6731437B2430084ADAE /* button_subtract_press.png */; };
 		0921E67C1437B2430084ADAE /* button_subtract.png in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6741437B2430084ADAE /* button_subtract.png */; };
+		0921E6821437C40B0084ADAE /* MathGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E6811437C40A0084ADAE /* MathGame.m */; };
+		0921E6891437E2150084ADAE /* GameAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E6881437E2140084ADAE /* GameAvatar.m */; };
+		0921E68C1437E7220084ADAE /* GamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E68B1437E7210084ADAE /* GamePlayer.m */; };
+		0921E68F1437EC900084ADAE /* DataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E68E1437EC8F0084ADAE /* DataDownloader.m */; };
+		0921E6921437F0760084ADAE /* GameServerRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E6911437F0760084ADAE /* GameServerRegistration.m */; };
+		0921E69714380B800084ADAE /* NSMutableURLRequest+WebServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E69414380B7E0084ADAE /* NSMutableURLRequest+WebServiceClient.m */; };
+		0921E69814380B800084ADAE /* UrlConnectionParameterList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E69614380B7F0084ADAE /* UrlConnectionParameterList.m */; };
+		0921E69B14380BEC0084ADAE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E69A14380BEC0084ADAE /* NSData+Base64.m */; };
+		0921E69E1438329A0084ADAE /* GameAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E69D1438329A0084ADAE /* GameAnswer.m */; };
+		0921E6A21438E2440084ADAE /* EmbeddedBrowserAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E6A01438E2420084ADAE /* EmbeddedBrowserAppViewController.m */; };
+		0921E6A31438E2440084ADAE /* EmbeddedBrowserAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6A11438E2430084ADAE /* EmbeddedBrowserAppViewController.xib */; };
 		094A4C501437855400CF3A0E /* CEPubnub.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C381437855400CF3A0E /* CEPubnub.m */; };
 		094A4C511437855400CF3A0E /* CEPubnubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C3B1437855400CF3A0E /* CEPubnubRequest.m */; };
 		094A4C521437855400CF3A0E /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C3F1437855400CF3A0E /* NSObject+JSON.m */; };
@@ -54,6 +65,27 @@
 		0921E6721437B2430084ADAE /* button_multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_multiply.png; sourceTree = "<group>"; };
 		0921E6731437B2430084ADAE /* button_subtract_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_subtract_press.png; sourceTree = "<group>"; };
 		0921E6741437B2430084ADAE /* button_subtract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_subtract.png; sourceTree = "<group>"; };
+		0921E6801437C40A0084ADAE /* MathGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathGame.h; sourceTree = "<group>"; };
+		0921E6811437C40A0084ADAE /* MathGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathGame.m; sourceTree = "<group>"; };
+		0921E6871437E2140084ADAE /* GameAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAvatar.h; sourceTree = "<group>"; };
+		0921E6881437E2140084ADAE /* GameAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAvatar.m; sourceTree = "<group>"; };
+		0921E68A1437E7210084ADAE /* GamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayer.h; sourceTree = "<group>"; };
+		0921E68B1437E7210084ADAE /* GamePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayer.m; sourceTree = "<group>"; };
+		0921E68D1437EC8F0084ADAE /* DataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDownloader.h; sourceTree = "<group>"; };
+		0921E68E1437EC8F0084ADAE /* DataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataDownloader.m; sourceTree = "<group>"; };
+		0921E6901437F0750084ADAE /* GameServerRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameServerRegistration.h; sourceTree = "<group>"; };
+		0921E6911437F0760084ADAE /* GameServerRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameServerRegistration.m; sourceTree = "<group>"; };
+		0921E69314380B7D0084ADAE /* NSMutableURLRequest+WebServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+WebServiceClient.h"; sourceTree = "<group>"; };
+		0921E69414380B7E0084ADAE /* NSMutableURLRequest+WebServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+WebServiceClient.m"; sourceTree = "<group>"; };
+		0921E69514380B7F0084ADAE /* UrlConnectionParameterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlConnectionParameterList.h; sourceTree = "<group>"; };
+		0921E69614380B7F0084ADAE /* UrlConnectionParameterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlConnectionParameterList.m; sourceTree = "<group>"; };
+		0921E69914380BEB0084ADAE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		0921E69A14380BEC0084ADAE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		0921E69C143832990084ADAE /* GameAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAnswer.h; sourceTree = "<group>"; };
+		0921E69D1438329A0084ADAE /* GameAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAnswer.m; sourceTree = "<group>"; };
+		0921E69F1438E2410084ADAE /* EmbeddedBrowserAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedBrowserAppViewController.h; sourceTree = "<group>"; };
+		0921E6A01438E2420084ADAE /* EmbeddedBrowserAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedBrowserAppViewController.m; sourceTree = "<group>"; };
+		0921E6A11438E2430084ADAE /* EmbeddedBrowserAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmbeddedBrowserAppViewController.xib; sourceTree = "<group>"; };
 		094A4C371437855400CF3A0E /* CEPubnub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPubnub.h; sourceTree = "<group>"; };
 		094A4C381437855400CF3A0E /* CEPubnub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEPubnub.m; sourceTree = "<group>"; };
 		094A4C391437855400CF3A0E /* CEPubnubDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPubnubDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +148,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0921E69914380BEB0084ADAE /* NSData+Base64.h */,
+				0921E69A14380BEC0084ADAE /* NSData+Base64.m */,
+				0921E69314380B7D0084ADAE /* NSMutableURLRequest+WebServiceClient.h */,
+				0921E69414380B7E0084ADAE /* NSMutableURLRequest+WebServiceClient.m */,
+				0921E69514380B7F0084ADAE /* UrlConnectionParameterList.h */,
+				0921E69614380B7F0084ADAE /* UrlConnectionParameterList.m */,
+				0921E68D1437EC8F0084ADAE /* DataDownloader.h */,
+				0921E68E1437EC8F0084ADAE /* DataDownloader.m */,
 				094A4C361437855400CF3A0E /* CEPubnub */,
 				094A4C3C1437855400CF3A0E /* JSON */,
 				1D3623240D0F684500981E51 /* mathdeathmatchAppDelegate.h */,
@@ -128,6 +168,19 @@
 				09A3DC5014379710009E92AE /* StartScreenViewController.xib */,
 				0921E66A1437AC120084ADAE /* MathEquation.h */,
 				0921E66B1437AC120084ADAE /* MathEquation.m */,
+				0921E6801437C40A0084ADAE /* MathGame.h */,
+				0921E6811437C40A0084ADAE /* MathGame.m */,
+				0921E6871437E2140084ADAE /* GameAvatar.h */,
+				0921E6881437E2140084ADAE /* GameAvatar.m */,
+				0921E68A1437E7210084ADAE /* GamePlayer.h */,
+				0921E68B1437E7210084ADAE /* GamePlayer.m */,
+				0921E6901437F0750084ADAE /* GameServerRegistration.h */,
+				0921E6911437F0760084ADAE /* GameServerRegistration.m */,
+				0921E69C143832990084ADAE /* GameAnswer.h */,
+				0921E69D1438329A0084ADAE /* GameAnswer.m */,
+				0921E69F1438E2410084ADAE /* EmbeddedBrowserAppViewController.h */,
+				0921E6A01438E2420084ADAE /* EmbeddedBrowserAppViewController.m */,
+				0921E6A11438E2430084ADAE /* EmbeddedBrowserAppViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -294,6 +347,7 @@
 				0921E67A1437B2430084ADAE /* button_multiply.png in Resources */,
 				0921E67B1437B2430084ADAE /* button_subtract_press.png in Resources */,
 				0921E67C1437B2430084ADAE /* button_subtract.png in Resources */,
+				0921E6A31438E2440084ADAE /* EmbeddedBrowserAppViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +374,16 @@
 				094A4CEF1437937D00CF3A0E /* MathGameViewController.m in Sources */,
 				09A3DC5114379710009E92AE /* StartScreenViewController.m in Sources */,
 				0921E66C1437AC120084ADAE /* MathEquation.m in Sources */,
+				0921E6821437C40B0084ADAE /* MathGame.m in Sources */,
+				0921E6891437E2150084ADAE /* GameAvatar.m in Sources */,
+				0921E68C1437E7220084ADAE /* GamePlayer.m in Sources */,
+				0921E68F1437EC900084ADAE /* DataDownloader.m in Sources */,
+				0921E6921437F0760084ADAE /* GameServerRegistration.m in Sources */,
+				0921E69714380B800084ADAE /* NSMutableURLRequest+WebServiceClient.m in Sources */,
+				0921E69814380B800084ADAE /* UrlConnectionParameterList.m in Sources */,
+				0921E69B14380BEC0084ADAE /* NSData+Base64.m in Sources */,
+				0921E69E1438329A0084ADAE /* GameAnswer.m in Sources */,
+				0921E6A21438E2440084ADAE /* EmbeddedBrowserAppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

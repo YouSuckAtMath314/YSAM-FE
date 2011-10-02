@@ -8,7 +8,7 @@
 
 #import "mathdeathmatchAppDelegate.h"
 
-#import "CEPubnub.h"
+#import "EmbeddedBrowserAppViewController.h"
 
 @implementation mathdeathmatchAppDelegate
 
@@ -18,19 +18,19 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    viewController = [[StartScreenViewController alloc] init];
+    EmbeddedBrowserAppViewController *browserViewController = [[[EmbeddedBrowserAppViewController alloc] init] autorelease];
+    
+    // to point to a bundled app: 	NSURL *url = [[NSBundle mainBundle] URLForResource: @"matchtrack" withExtension: @"mp3"];
+    browserViewController.initialURL = [NSURL URLWithString: @"http://www.google.com"];
 
+    viewController = [browserViewController retain];    
+    
     // Add the view controller's view to the window and display.
     [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];
-
-	pn = [[CEPubnub alloc] initWithPublishKey: @"demo" subscribeKey: @"demo" secretKey: nil sslOn: NO origin: @"pubsub.pubnub.com"];
-
-	[pn subscribe: @"dbm_test" delegate: self];
-	
+    
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -86,45 +86,5 @@
     [super dealloc];
 }
 
-
-- (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveDictionary:(NSDictionary *)response onChannel:(NSString *)channel
-{
-	NSLog(@"sub on channel (dict) : %@ - received: %@", channel, response);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveArray:(NSArray *)response onChannel:(NSString *)channel
-{
-	NSLog(@"sub on channel (arr) : %@ - received: %@ - pubnub %@", channel, response, pubnub);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveString:(NSString *)response onChannel:(NSString *)channel
-{
-	NSLog(@"sub on channel (str) : %@ - received: %@", channel, response);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub subscriptionDidFailWithResponse:(NSString *)response onChannel:(NSString *)channel
-{
-	NSLog(@"FAILURE sub on channel: %@ - received: %@", channel, response);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveHistoryArray:(NSArray *)response onChannel:(NSString *)channel
-{
-	NSLog(@"HISTORY on channel (arr) : %@ - received: %@ - pubnub %@", channel, response, pubnub);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub publishDidSucceedWithResponse:(NSString *)response onChannel:(NSString *)channel
-{
-	NSLog(@"publish on channel: %@ - received: %@", channel, response);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub publishDidFailWithResponse:(NSString *)response onChannel:(NSString *)channel
-{
-	NSLog(@"FAILURE publish on channel: %@ - received: %@", channel, response);
-}
-
-- (void)pubnub:(CEPubnub *)pubnub didReceiveTime:(NSString *)timestamp
-{
-	NSLog(@"Timestamp is %@ - pubnub %@", timestamp, pubnub);
-}
 
 @end

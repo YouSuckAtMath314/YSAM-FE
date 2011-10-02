@@ -137,14 +137,16 @@ delegate: (id)        delegate
 -(void) subscribe: (NSDictionary*) args {
     NSString* channel = [args objectForKey:@"channel"];
     
-	CEPubnubResponse *callback = [CEPubnubSubscribeDelegate alloc];
+	CEPubnubSubscribeDelegate *callback = [CEPubnubSubscribeDelegate alloc];
 	[callback
 	 finished: [args objectForKey:@"delegate"]
 	 pubnub:   self
 	 channel:  channel
 	 ];
+    
+    callback.alreadyListening = [[args objectForKey: @"timetoken"] intValue] > 0;
 								  
-
+    // wow, fix this - DBM
 	CEPubnubRequest *req = [CEPubnubRequest alloc];
 	
 	[req
@@ -281,15 +283,21 @@ delegate: (id)        delegate
 @end
 
 @implementation CEPubnubSubscribeDelegate
+
+@synthesize alreadyListening;
+
 -(void) callback: (id) response {
-	
-	
-	
     NSArray* response_data = [parser objectWithString: response];
     if (![pubnub subscribed: channel]) return;
-	
-	
-	
+
+	if (!alreadyListening) {
+        alreadyListening = YES;
+
+        if ([delegate respondsToSelector:@selector(pubnub:subscriptionDidStartListeningOnChannel:)]) {
+            [delegate pubnub: pubnub subscriptionDidStartListeningOnChannel: channel];
+        }
+    }
+    
     [pubnub
 	 performSelector: @selector(subscribe:)
 	 withObject: [NSDictionary
