@@ -21,7 +21,9 @@
     EmbeddedBrowserAppViewController *browserViewController = [[[EmbeddedBrowserAppViewController alloc] init] autorelease];
     
     // to point to a bundled app: 	NSURL *url = [[NSBundle mainBundle] URLForResource: @"matchtrack" withExtension: @"mp3"];
-    browserViewController.initialURL = [NSURL URLWithString: @"http://www.google.com"];
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource: @"index" withExtension: @"html" subdirectory: @"html"];
+    browserViewController.initialURL = url;
 
     viewController = [browserViewController retain];    
     

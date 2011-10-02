@@ -28,6 +28,7 @@
 		0921E69E1438329A0084ADAE /* GameAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E69D1438329A0084ADAE /* GameAnswer.m */; };
 		0921E6A21438E2440084ADAE /* EmbeddedBrowserAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E6A01438E2420084ADAE /* EmbeddedBrowserAppViewController.m */; };
 		0921E6A31438E2440084ADAE /* EmbeddedBrowserAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6A11438E2430084ADAE /* EmbeddedBrowserAppViewController.xib */; };
+		0921E6A51438E7110084ADAE /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0921E6A41438E7110084ADAE /* html */; };
 		094A4C501437855400CF3A0E /* CEPubnub.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C381437855400CF3A0E /* CEPubnub.m */; };
 		094A4C511437855400CF3A0E /* CEPubnubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C3B1437855400CF3A0E /* CEPubnubRequest.m */; };
 		094A4C521437855400CF3A0E /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 094A4C3F1437855400CF3A0E /* NSObject+JSON.m */; };
@@ -86,6 +87,7 @@
 		0921E69F1438E2410084ADAE /* EmbeddedBrowserAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedBrowserAppViewController.h; sourceTree = "<group>"; };
 		0921E6A01438E2420084ADAE /* EmbeddedBrowserAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedBrowserAppViewController.m; sourceTree = "<group>"; };
 		0921E6A11438E2430084ADAE /* EmbeddedBrowserAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmbeddedBrowserAppViewController.xib; sourceTree = "<group>"; };
+		0921E6A41438E7110084ADAE /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		094A4C371437855400CF3A0E /* CEPubnub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPubnub.h; sourceTree = "<group>"; };
 		094A4C381437855400CF3A0E /* CEPubnub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEPubnub.m; sourceTree = "<group>"; };
 		094A4C391437855400CF3A0E /* CEPubnubDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPubnubDelegate.h; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0921E6A41438E7110084ADAE /* html */,
 				0921E66D1437B2430084ADAE /* button_add_press.png */,
 				0921E66E1437B2430084ADAE /* button_add.png */,
 				0921E66F1437B2430084ADAE /* button_divide_press.png */,
@@ -348,6 +351,7 @@
 				0921E67B1437B2430084ADAE /* button_subtract_press.png in Resources */,
 				0921E67C1437B2430084ADAE /* button_subtract.png in Resources */,
 				0921E6A31438E2440084ADAE /* EmbeddedBrowserAppViewController.xib in Resources */,
+				0921E6A51438E7110084ADAE /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
