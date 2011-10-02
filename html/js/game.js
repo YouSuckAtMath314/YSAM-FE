@@ -20,6 +20,7 @@ var statechange_time = Date.now();
 var gamestate = 'loading';
 var gameplay_state = 'selecting';
 var player_image = null;
+var enemy_image = null;
 var orb_hopper = [];
 var orb_columns= [];
 var orb_colors = [ "R", "G", "B", "Y"];
@@ -99,8 +100,8 @@ var render_health = function()
 
     render_health_bar(canvas.width - artindex.bg_health_empty.image.width ,0, playerstate[1].health, artindex.bg_health_empty, artindex.bg_health_full_blue);
 
-    render_avatar(player_image, 100, 80, playerstate[0].health );
-    render_avatar(player_image, (canvas.width - 100 ) - player_image.image.width, 80, playerstate[1].health );
+    render_avatar(player_image, ((300 - player_image.image.width) / 2), 80, playerstate[0].health );
+    render_avatar(enemy_image, (canvas.width - 150) - (enemy_image.image.width / 2), 80, playerstate[1].health );
 };
 
 var render_gameplay = function()
@@ -158,7 +159,7 @@ var orb_click_closure = function( orb )
 
     return function()
     {
-        if( picked_orbs.indexOf( orb ) < 0 )
+        if( gameplay_state == 'selecting' && picked_orbs.indexOf( orb ) < 0 )
         { 
             picked_orbs.push( orb );
 
@@ -288,9 +289,10 @@ var update_gameplay = function(delta)
 
         generate_question();
 
-        buttons.splice( buttons.indexOf( picked_orbs[0]) , 1);
-        buttons.splice( buttons.indexOf( picked_orbs[1]) , 1);
-
+        for(var i in picked_orbs)
+        {
+            buttons.splice( buttons.indexOf( picked_orbs[i]) , 1);
+        }
         picked_orbs = [];
 
         set_gameplaystate('selecting');
@@ -310,7 +312,7 @@ var reset_gameplay = function()
     reset_orbs();
 
     generate_question();
-
+    set_gameplaystate('selecting');
     gamestate = "playing"; 
 };
 
@@ -327,6 +329,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "newton"; 
                         player_image = artindex.newton;
+                        enemy_image = artindex.einstein;
                         reset_lobby();
                     } 
                 };
@@ -342,6 +345,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "archimedes"; 
                         player_image = artindex.archimedes;
+                        enemy_image = artindex.einstein;
                         reset_lobby();
                     } };
 
@@ -356,6 +360,7 @@ var reset_charselect = function()
                 "click": function(){ 
                         character_select = "einstein"; 
                         player_image = artindex.einstein;
+                        enemy_image = artindex.archimedes;
                         reset_lobby();
                     } };
 
