@@ -17,6 +17,7 @@ var playerstate = [
 
 var statechange_time = Date.now();
 
+var victory_state = 'win';
 var gamestate = 'loading';
 var gameplay_state = 'selecting';
 var player_image = null;
@@ -46,7 +47,7 @@ var loadart = function ( artindex )
 {
     for( key in artindex )
     {  
-        var image =  new Image();
+        var image = new Image();
 
         image.loaded = false;
         image.onload = onLoadClosure( image ); 
@@ -106,8 +107,6 @@ var render_health = function()
 
 var render_gameplay = function()
 {
-    
-
     ctx.drawImage( artindex.background.image, 0,0 );
 
     render_buttons();
@@ -119,7 +118,7 @@ var render_gameplay = function()
     ctx.fillStyle = "rgb(256, 256, 256)";
     ctx.textBaseline = "top";
     ctx.textAlign = "center";
-    ctx.fillText( question.text, 512, 500 );
+    ctx.fillText( question.text, 512, 580 );
 };
 
 var render_charselect = function()
@@ -135,11 +134,25 @@ var do_damage = function( player_index )
 
     if(player_index == 1)
     {
-        audioindex.excellent.audio.play();
+        var soundindex = Math.floor(Math.random() * right_sounds.length);
+        
+        audioindex[right_sounds[soundindex]].audio.play();
     }
     else
     {
-        audioindex.wickedsick.audio.play();
+        var soundindex = Math.floor(Math.random() * wrong_sounds.length);
+        
+        audioindex[wrong_sounds[soundindex]].audio.play();
+    }
+
+    if(playerstate[0].health < 0)
+    {
+        reset_intro();
+    }
+
+    if(playerstate[1].health < 0)
+    {
+        reset_intro();
     }
 }
 
@@ -231,13 +244,13 @@ var place_orbs = function()
         for(var j = 0; j < orb_columns[i].length; j++)
         {
             orb_columns[i][j].x = 312 + i * 80; 
-            orb_columns[i][j].y = 370 - (j * 80); 
+            orb_columns[i][j].y = 450 - (j * 80); 
         }
     }
 
     for(var i in picked_orbs)
     {
-        picked_orbs[i].y = 610;
+        picked_orbs[i].y = 670;
         picked_orbs[i].x = 422 + (i * 80);
     }
 
@@ -260,7 +273,7 @@ var reset_orbs = function()
      
     for(var i = 0; i < 5; i++)
     {
-        for(var j = 0; j < 5; j++)
+        for(var j = 0; j < 6; j++)
         {
             var orb = gen_orb(); 
             
@@ -313,6 +326,7 @@ var reset_gameplay = function()
 
     generate_question();
     set_gameplaystate('selecting');
+
     gamestate = "playing"; 
 };
 
@@ -388,6 +402,13 @@ var reset_intro = function()
                 "click":reset_charselect };
     
     buttons.splice( 0, 0, button);
+
+    theme_song.pause();
+    theme_song.volume = 0.35;
+    theme_song.currentTime = 0;    
+    theme_song.loop = true;
+
+    theme_song.play();
 
     gamestate = 'intro';
 };
@@ -568,4 +589,3 @@ setInterval(main, 30);
 canvas.onclick = canvas_click;
 
 reset_lobby = reset_gameplay;
-theme_song.play();
