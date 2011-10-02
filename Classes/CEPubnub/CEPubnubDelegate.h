@@ -34,6 +34,8 @@
 @protocol CEPubnubDelegate <NSObject>
 
 @optional
+
+- (void)pubnub:(CEPubnub *)pubnub subscriptionDidStartListeningOnChannel:(NSString *)channel;
 - (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveDictionary:(NSDictionary *)response onChannel:(NSString *)channel;
 - (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveArray:(NSArray *)response onChannel:(NSString *)channel;
 - (void)pubnub:(CEPubnub *)pubnub subscriptionDidReceiveString:(NSString *)response onChannel:(NSString *)channel;

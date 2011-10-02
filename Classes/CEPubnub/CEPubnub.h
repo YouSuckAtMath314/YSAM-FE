@@ -82,7 +82,14 @@ THE SOFTWARE.
 -(void) shutdown;
 @end
 
-@interface CEPubnubSubscribeDelegate: CEPubnubResponse @end
+@interface CEPubnubSubscribeDelegate: CEPubnubResponse {
+    BOOL alreadyListening;
+}
+
+@property (nonatomic) BOOL alreadyListening;
+
+@end
+
 @interface CEPubnubHistoryDelegate: CEPubnubResponse @end
 @interface CEPubnubPublishDelegate: CEPubnubResponse @end
 @interface CEPubnubTimeDelegate:      CEPubnubResponse @end

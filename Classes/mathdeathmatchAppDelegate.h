@@ -8,16 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CEPubnub.h"
-#import "StartScreenViewController.h"
-
 @class mathdeathmatchViewController;
 
-@interface mathdeathmatchAppDelegate : NSObject <UIApplicationDelegate, CEPubnubDelegate> {
+@interface mathdeathmatchAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	StartScreenViewController *viewController;
-	
-	CEPubnub *pn;
+	UIViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
