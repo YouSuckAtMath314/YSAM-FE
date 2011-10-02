@@ -8,6 +8,7 @@ document.body.appendChild(canvas);
 var theme_song = new Audio("../matchtrack.mp3");
 var buttons = [];
 var guid = Math.floor(Math.random()*10000); // HACK for now
+var channel = null;
 
 var playerstate = [
     {"health":0.4},
@@ -240,12 +241,25 @@ var update_lobby = function(delta)
       if(match_found) {
         reset_lobby();
       } else {
-        if(check_counter*delta > 1000) {
+        if(check_counter*delta > 200) {
           $.ajax({ url: "http://localhost:3000/match/status/" + guid + ".js",
                    dataType: "jsonp",
                    success: function(data){ 
-                     if(data.match) {
+                     console.log(data);
+                     if(data.matched) {
                        match_found = true;
+                       channel = data.channel;
+                       alert("connected!!!");
+
+                       PUBNUB.subscribe({
+                           channel  : data.guid,
+                           callback : function(message) { alert(message); }
+                       });
+
+                       PUBNUB.publish({
+                           channel  : data.guid,
+                           message : "hello"
+                       });
                      }
                    }
           });
@@ -256,9 +270,8 @@ var update_lobby = function(delta)
     } else {
       $.ajax({ url: "http://localhost:3000/match/join/" + guid + ".js",
                dataType: "jsonp",
-               success: function(){ 
-                 match_found = true;
-                 lobby_searching = false;
+               success: function(data){ 
+                 lobby_searching = true;
                }
       });
     }
