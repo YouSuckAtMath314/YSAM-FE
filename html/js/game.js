@@ -130,29 +130,37 @@ var render_charselect = function()
 
 var do_damage = function( player_index )
 {
-    playerstate[player_index].health -= 0.1;
+    playerstate[player_index].health -= 0.25;
 
-    if(player_index == 1)
+    var gameover = false;
+    if(playerstate[1].health < 0)
     {
-        var soundindex = Math.floor(Math.random() * right_sounds.length);
-        
-        audioindex[right_sounds[soundindex]].audio.play();
-    }
-    else
-    {
-        var soundindex = Math.floor(Math.random() * wrong_sounds.length);
-        
-        audioindex[wrong_sounds[soundindex]].audio.play();
+        victory_state = "win";
+        gameover = true;
+        reset_victory();
     }
 
     if(playerstate[0].health < 0)
     {
-        reset_intro();
+        victory_state = "lose";
+        gameover = true;
+        reset_victory();
     }
-
-    if(playerstate[1].health < 0)
+    if(!gameover)
     {
-        reset_intro();
+        if(player_index == 1)
+        {
+            var soundindex = Math.floor(Math.random() * right_sounds.length);
+            
+            audioindex[right_sounds[soundindex]].audio.volume = 1.0;
+            audioindex[right_sounds[soundindex]].audio.play();
+        }
+        else
+        {
+            var soundindex = Math.floor(Math.random() * wrong_sounds.length);
+            audioindex[wrong_sounds[soundindex]].audio.volume = 1.0;
+            audioindex[wrong_sounds[soundindex]].audio.play();
+        }
     }
 }
 
@@ -390,6 +398,46 @@ var render_intro = function()
     render_buttons();
 };
 
+var reset_victory = function()
+{
+    buttons = [];
+
+    theme_song.pause();
+    
+    if(victory_state == "win")
+    {
+        var image = artindex.results_won; 
+
+        button = {"image": image, 
+                    "x": 138,
+                    "y": 138, 
+                    "width":image.image.width,
+                    "height":image.image.height,
+                    "click":reset_intro };
+        
+        buttons.splice( 0, 0, button);
+
+        audioindex.ludicrouskill.audio.play();
+    }
+    else
+    {
+        var image = artindex.results_lost; 
+
+        button = {"image": image, 
+                    "x": 138,
+                    "y": 138, 
+                    "width":image.image.width,
+                    "height":image.image.height,
+                    "click":reset_intro };
+        
+        buttons.splice( 0, 0, button);
+
+        audioindex.yousuck.audio.play();
+    }
+    gamestate = "victory";
+};
+
+
 var reset_intro = function()
 {
     buttons = [];
@@ -554,7 +602,7 @@ var main = function () {
 	var now = Date.now();
 	var delta = now - then;
 
-    if(gamestate == 'intro')
+    if(gamestate == 'intro' || gamestate == 'victory' )
     {
 	    render_intro();
     }
